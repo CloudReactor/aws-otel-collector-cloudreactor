@@ -7,7 +7,7 @@ wrapped with the
 [CloudReactor proc_wrapper](https://github.com/CloudReactor/cloudreactor-procwrapper)
 so that when the container exits, CloudReactor will be notified the Task has stopped.
 Just like the [AWS Distro for OpenTelemetry image](https://aws-otel.github.io/docs/),
-can be used as a sidecar for ECS deployments.
+it can be used as a sidecar for ECS deployments.
 
 ## Configuration
 
@@ -27,7 +27,7 @@ which is by default:
 
     --config /etc/aws-otel-config/ecs-cloudwatch.yaml
 
-You may also get the configuration file by passing in an http URL, https URL, or s3 ARN:
+You may also get the configuration file by passing in an http URL, https URL, or S3 ARN:
 
     --config s3://mybucket.s3.us-west-1.amazonaws.com/path/to/config.yaml
 
