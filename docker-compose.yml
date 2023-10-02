@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  collector:
+    image: cloudreactor/aws-otel-collector-cloudreactor
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      AWS_REGION: us-west-2
+
+  # Check your Dockerfile against best-practices:
+  # See https://github.com/hadolint/hadolint
+  hadolint:
+    image: hadolint/hadolint
+    volumes:
+      - ./Dockerfile:/mnt/Dockerfile
+    entrypoint: "/bin/hadolint /mnt/Dockerfile"
+    profiles: ["dev"]
