@@ -11,6 +11,7 @@ services:
       - "13133:13133"     # Health check
     environment:
       AWS_REGION: us-west-2
+      PROC_WRAPPER_LOG_LEVEL: DEBUG
 
   # Check your Dockerfile against best-practices:
   # See https://github.com/hadolint/hadolint
