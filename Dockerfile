@@ -14,7 +14,7 @@ RUN wget -nv https://aws-otel-collector.s3.amazonaws.com/amazon_linux/amd64/v0.3
 
 WORKDIR /root
 
-RUN wget -nv https://github.com/CloudReactor/cloudreactor-procwrapper/raw/5.1.1/bin/pyinstaller/al2/5.1.1/proc_wrapper.bin \
+RUN wget -nv https://github.com/CloudReactor/cloudreactor-procwrapper/raw/5.1.2-rc1/bin/pyinstaller/al2/5.2.0-rc1/proc_wrapper.bin \
   && chmod +x proc_wrapper.bin
 
 HEALTHCHECK --interval=1m --timeout=30s --start-period=10s \
