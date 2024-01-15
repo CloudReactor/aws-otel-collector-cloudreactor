@@ -1,4 +1,4 @@
-FROM public.ecr.aws/amazonlinux/amazonlinux:2.0.20230926.0
+FROM public.ecr.aws/amazonlinux/amazonlinux:2.0.20240109.0
 
 EXPOSE 4317 4318 13133
 
@@ -18,7 +18,7 @@ WORKDIR /home/aoc
 
 USER aoc
 
-RUN wget -nv https://github.com/CloudReactor/cloudreactor-procwrapper/raw/5.2.0-rc2/bin/pyinstaller/al2/5.2.0-rc2/proc_wrapper.bin \
+RUN wget -nv https://github.com/CloudReactor/cloudreactor-procwrapper/raw/5.2.0/bin/pyinstaller/al2/5.2.0/proc_wrapper.bin \
   && chmod +x proc_wrapper.bin
 
 HEALTHCHECK --interval=1m --timeout=30s --start-period=10s \
