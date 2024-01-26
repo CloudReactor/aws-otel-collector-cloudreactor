@@ -38,4 +38,4 @@ See [Confmap providers supported by the ADOT collector](https://aws-otel.github.
 Currently, this image uses the following dependencies:
 
   * AWS Distro for OpenTelemetry Collector version 0.36.0
-  * CloudReactor proc_wrapper version 5.1.1
+  * CloudReactor proc_wrapper version 5.2.0
