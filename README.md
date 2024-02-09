@@ -11,7 +11,9 @@ it can be used as a sidecar for ECS deployments.
 
 ## Configuration
 
-For convenience, [common configuration files targeted for running in ECS](https://aws-otel.github.io/docs/getting-started/ecs-configurations/ecs-config-section) are stored in the image, in the directory `/etc/aws-otel-config/`:
+For convenience,
+[common configuration files targeted for running in ECS](https://aws-otel.github.io/docs/getting-started/ecs-configurations/ecs-config-section)
+are stored in the image, in the directory `/etc/aws-otel-config/`:
 
 * `ecs-cloudwatch.yaml`: Export data to CloudWatch and Container Insights (this is the default configuration if the command is not overridden).
 * `ecs.yaml`: Export data to Container Insights
@@ -31,7 +33,16 @@ You may also get the configuration file by passing in an http URL, https URL, or
 
     --config s3://mybucket.s3.us-west-1.amazonaws.com/path/to/config.yaml
 
-See [Confmap providers supported by the ADOT collector](https://aws-otel.github.io/docs/components/confmap-providers) for more options and details.
+See [Confmap providers supported by the ADOT collector](https://aws-otel.github.io/docs/components/confmap-providers)
+for more options and details.
+
+## Image locations
+
+The image is published to 3 container repositories:
+
+* DockerHub: [cloudreactor/cloudreactor-aws-otel-collector](https://hub.docker.com/repository/docker/cloudreactor/cloudreactor-aws-otel-collector/general)
+* AWS ECR Public: [public.ecr.aws/cloudreactor/cloudreactor-aws-otel-collector](https://public.ecr.aws/cloudreactor/cloudreactor-aws-otel-collector)
+* GitHub Repositories: [ghcr.io/cloudreactor/aws-otel-collector-cloudreactor](https://github.com/cloudreactor/aws-otel-collector-cloudreactor/pkgs/container/aws-otel-collector-cloudreactor)
 
 ## Dependency versions
 
