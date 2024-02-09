@@ -42,11 +42,12 @@ The image is published to 3 container repositories:
 
 * DockerHub: [cloudreactor/cloudreactor-aws-otel-collector](https://hub.docker.com/repository/docker/cloudreactor/cloudreactor-aws-otel-collector/general)
 * AWS ECR Public: [public.ecr.aws/cloudreactor/cloudreactor-aws-otel-collector](https://public.ecr.aws/cloudreactor/cloudreactor-aws-otel-collector)
-* GitHub Repositories: [ghcr.io/cloudreactor/aws-otel-collector-cloudreactor](https://github.com/cloudreactor/aws-otel-collector-cloudreactor/pkgs/container/aws-otel-collector-cloudreactor)
+* GitHub Container Repositories: [ghcr.io/cloudreactor/aws-otel-collector-cloudreactor](https://github.com/cloudreactor/aws-otel-collector-cloudreactor/pkgs/container/aws-otel-collector-cloudreactor)
 
 ## Dependency versions
 
 Currently, this image uses the following dependencies:
 
+  * Amazon Linux 2.0.20240109.0
   * AWS Distro for OpenTelemetry Collector version 0.36.0
   * CloudReactor proc_wrapper version 5.3.2
